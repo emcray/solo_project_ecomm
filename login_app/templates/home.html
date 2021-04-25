@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <!-- Bootstrap -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css"/>
+
+    <!-- Font awesome 5 -->
+    <link href="{% static 'fonts/fontawesome/css/all.min.css' %}" type="text/css" rel="stylesheet">
+
+    <!-- ui style -->
+    <link href="{% static 'css/ui.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet" /> 
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery-2.0.0.min.js' %}" type="text/javascript"></script>
+
+    <!-- Bootstrap -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}" type="text/javascript"></script>
+
+    <!-- custom javascript -->
+    <script src="{% static 'js/script.js' %}" type="text/javascript"></script>
+    <title>Ecomm Store Homepage</title>
+</head>
+<body>
+    <header class="section-header">
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <ul class="nav bg-dark navbar-dark">
+                <li><a class="nav-link text-white" href="/login_page">Shop!</a></li>
+                <li><a class="nav-link text-white" href="/login_page">Register</a></li>
+                <li><a class="nav-link text-white" href="/login_page">View Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <div class="">
+        <h1>Welcome! Shop Women's Moto & Mountain Bike gear! </h1>
+    </div>
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Fast Delivery</h5>
+            <p class="card-text">Shippments to your house within 5 days after purchase if you live in the US!</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Secure Payment Options</h5>
+            <p class="card-text">Secure payment options. We never save your credit card!</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Quality Products</h5>
+            <p class="card-text">Only the best products, made right here in the US!</p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <figure class="card card-product-grid">
+                <div class="img-wrap"> <img src="{% static 'images/MOTO/main stray left.jpg' %}"> </div>
+                <figcaption class="info-wrap border-top">
+                    <a href="#" class="title">Main Stray MOTO Googles</a>
+                    <div class="price mt-2">$52.99</div> <!-- price-wrap.// -->
+                </figcaption>
+            </figure> <!-- card // -->
+        </div> <!-- col.// -->
+        <div class="col-md-3 col-sm-6">
+            <figure class="card card-product-grid">
+                <div class="img-wrap">
+                    <img src="{% static 'images/jerseys/blackout back.jpg' %}">
+                    <span class="topbar">
+                        <a href="#" class="float-right"><i class="fa fa-heart"></i></a>
+                    </span>
+                </div>
+                <figcaption class="info-wrap border-top">
+                    <a href="#" class="title">Blackout MOTO Jersey</a>
+                    <div class="price mt-2">$279.00</div> <!-- price-wrap.// -->
+                </figcaption>
+            </figure> <!-- card // -->
+        </div> <!-- col.// -->
+        <div class="col-md-3 col-sm-6">
+            <figure class="card card-product-grid">
+                <div class="img-wrap">
+                    <span class="topbar">
+                        <span class="badge badge-success"> NEW </span>
+                    </span>
+                    <img src="{% static 'images/MTB/Mips Helmet back.jpg' %}">
+                </div>
+                <figcaption class="info-wrap border-top">
+                    <a href="#" class="title">MTB Mips Helmet</a>
+                        <div class="price-wrap mt-2">
+                            <span class="price">$109</span>
+                        </div> <!-- price-wrap.// -->
+                </figcaption>
+            </figure> <!-- card // -->
+        </div> <!-- col.// -->
+    </div><!-- row.// -->
+</body>
+</html>
